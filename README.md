@@ -24,9 +24,14 @@ las variables de entorno se pueden llegar a usar en emails,tokens ip's, id's,url
 
 El script de esta clase es
 ```npm
-npm run clase4
+npm run clase5
 ```
 es lo mismo que correr este comando para inicializar las variables de entorno
 ```npm
 NOMBRE=Abdiel TWITTER=abdielcro node conceptos/entorno.js
 ```
+
+#  Nodemon y PM2
+
+nodemon verifica si hay cambios y ejecutan los codigos con node
+y PM2 es más robusto / te permite monitorear, ejecutar, etc.
