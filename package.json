@@ -1,0 +1,16 @@
+{
+    "name": "fundamentosnodejs",
+    "version": "1.0.0",
+    "description": "Curso de Fundamentos de Node.js",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clase4": "node conceptos/monohilo.js"
+    },
+    "keywords": [
+        "node.js",
+        "javascript"
+    ],
+    "author": "Abdiel Carreño <zayelmech@gmail.com>",
+    "license": "MIT"
+}
