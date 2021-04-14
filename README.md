@@ -35,3 +35,7 @@ NOMBRE=Abdiel TWITTER=abdielcro node conceptos/entorno.js
 
 nodemon verifica si hay cambios y ejecutan los codigos con node
 y PM2 es más robusto / te permite monitorear, ejecutar, etc.
+
+# callback
+
+Las funciones son elementos de primer nivel
