@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "clase4": "node conceptos/monohilo.js"
+        "clase4": "node conceptos/monohilo.js",
+        "clase5": "NOMBRE=Abdiel TWITTER=abdielcro node conceptos/entorno.js"
     },
     "keywords": [
         "node.js",

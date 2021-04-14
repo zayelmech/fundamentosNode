@@ -6,6 +6,8 @@
 
 - **Thread Pool**: Se encarga de gestionar los eventos de forma asíncrona. Una vez terminado lo devuelve al Event Loop. El Event Loop vera si lo pasa a Event Queue o no.
 
+![Alt text](https://raw.githubusercontent.com/zayelmech/fundamentosNode/main/src/img/ejemplo.webp)
+
 # Monohilo: implicaciones en diseño y seguridad
 
 - Si no se tienen cuidado suficiente esto puede parar por completo todo el proceso
@@ -15,4 +17,16 @@
 npm run clase4
 ```
 
-#
+# Variables de entorno
+
+Se recomienda poner las variables de entorno en **mayusculas** y separarlas con `_` guin bajo
+las variables de entorno se pueden llegar a usar en emails,tokens ip's, id's,urls's para inyectar informacion desde fuera al proceso y este se ejecute en tiempo real 
+
+El script de esta clase es
+```npm
+npm run clase4
+```
+es lo mismo que correr este comando para inicializar las variables de entorno
+```npm
+NOMBRE=Abdiel TWITTER=abdielcro node conceptos/entorno.js
+```
