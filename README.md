@@ -39,3 +39,6 @@ y PM2 es más robusto / te permite monitorear, ejecutar, etc.
 # callback
 
 Las funciones son elementos de primer nivel
+
+# Callback Hell: refatorizar o sufrir
+![Alt text](https://tse1.mm.bing.net/th?id=OIP.zxx4iQAG4HilOIQqDKpxJwHaEU&pid=Api&P=0&w=299&h=175)
