@@ -8,7 +8,8 @@
         "clase4": "node conceptos/monohilo.js",
         "clase5": "NOMBRE=Abdiel TWITTER=abdielcro node conceptos/entorno.js",
         "clase6": "nodemon async/callback.js",
-        "clase8": "nodemon async/callbackHell.js"
+        "clase8": "nodemon async/callbackHell.js",
+        "clase9": "nodemon async/promesas.js"
 
     },
     "keywords": [

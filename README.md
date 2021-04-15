@@ -42,3 +42,26 @@ Las funciones son elementos de primer nivel
 
 # Callback Hell: refatorizar o sufrir
 ![Alt text](https://tse1.mm.bing.net/th?id=OIP.zxx4iQAG4HilOIQqDKpxJwHaEU&pid=Api&P=0&w=299&h=175)
+
+# Promesas
+
+El concepto principal es que las promesas pueden tener estados
+- Resuelta
+La manera de declarar una promesa es la siguiente
+```js
+function hola(nombre) {
+    return new Promise(function name(resolve, reject) {
+        //code here
+        resolve(nombre);
+    });
+}
+
+//Para ejecutarlas 
+hola('Abdiel')
+    .then((nombre) => {
+        console.log('Terminado el proceso...');
+    })
+    .catch((error) => {
+        console.error(`Ocurrio un error: ${error}`);
+    })
+```
