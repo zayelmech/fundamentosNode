@@ -11,7 +11,9 @@
         "clase8": "nodemon async/callbackHell.js",
         "clase9": "nodemon async/promesas.js",
         "clase10": "nodemon async/asyncAwait.js",
-        "clase11": "nodemon modulos/globales.js"
+        "clase11": "nodemon modulos/globales.js",
+        "clase12": "nodemon modulos/fs.js",
+        "clase13": "nodemon modulos/consola.js"
 
     },
     "keywords": [

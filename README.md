@@ -88,3 +88,35 @@ Algunos metodos que se incluyen en el global objeto son
 - clearInterval : detiene un setInterval
 - clearTimeOut : detiene un setTimeOut
 
+# File system
+
+El **file system** provee una API para interactuar con el sistema de archivos cerca del estándar POSIX.
+POSIX es el estándar para interfaces de comando y shell, las siglas las significan: “Interfaz de sistema operativo portátil” la X de POSIX es por UNIX.
+
+El file system nos permite acceder archivo del sistema, leer, modificar., escribirlos, es muy útil para precompiladores, para lo que requiera hacer grabados de disco, o bases de datos en node requieren un uso intensivo de Node.Todo lo que hagamos con modulos por buenas prácticas son asincronos, pero tienen una version sincrona no recomendada pues pordría bloquear el event loop con más facilidad.
+```js
+const fs = require('fs');
+fs.readFile() //leer un archivo
+fs.writeFile() //escribir en un archivo
+fs.unlink() //borrar archivo
+
+```
+
+# Console
+
+Con console podemos imprimir todo tipo de valores por
+nuestra terminal.
+```js
+    console.log()// recibe cualquier tipo y lo muestra en el consola.
+    console.info()// es equivalente a log pero es usado para informar.
+    console.error()// es equivalente a log pero es usado para errores.
+    console.warn()// es equivalente a log pero es usado para warning.
+    console.table()// muestra una tabla a partir de un objeto.
+    console.count()// inicia un contador autoincremental.
+    console.countReset()// reinicia el contador a 0.
+    console.time()// inicia un cronometro en ms.
+    console.timeEnd()// Finaliza el cronometro.
+    console.group()// permite agrupar errores mediante identación.
+    console.groupEnd()// finaliza la agrupación.
+    console.clear()// Limpia la consola.
+```
