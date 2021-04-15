@@ -71,3 +71,20 @@ hola('Abdiel')
 - **Asyn/Await** es azucar sintactico, es decir, una forma muy legible y entendible de realizar código, un **Async/Await** no deja de ser una función asíncrona, la diferencia es que al usar esta sintaxis se podrá ver un código más legible.
 - Para usar correctamente esta sintaxis usamos Async para declarar una función asíncrona, cuando una función es asíncrona podremos usar dentro de su contexto el Await.
 - El **Await** es la manera en que le indicaremos a nuestro código que ha de “esperar” a que el evento al cual le indiquemos Await es importante para el proceso del código, por ende, para poder seguir ejecutando el proceso espere a que el evento se resuelva y retorne un valor.
+
+# Global 
+En node tenemos el objeto **global** que contiene los metodos y propiedades basicas que usamos Node
+
+`{_global_ es un equivalente de _this_ en el navegador}`
+En node **this** es un alias de **global**
+
+```js
+    this === global //true
+```
+Algunos metodos que se incluyen en el global objeto son 
+- setTimeOut :encargada de llamar a una funcion despues de un tiempo
+- setInterval : llama a otra funcion cada intervalo de tiempo
+- setmnmediate: Equivale a setTimeOut pero con tiempo 0
+- clearInterval : detiene un setInterval
+- clearTimeOut : detiene un setTimeOut
+
