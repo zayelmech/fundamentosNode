@@ -9,7 +9,8 @@
         "clase5": "NOMBRE=Abdiel TWITTER=abdielcro node conceptos/entorno.js",
         "clase6": "nodemon async/callback.js",
         "clase8": "nodemon async/callbackHell.js",
-        "clase9": "nodemon async/promesas.js"
+        "clase9": "nodemon async/promesas.js",
+        "clase10": "nodemon async/asyncAwait.js"
 
     },
     "keywords": [
