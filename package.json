@@ -13,7 +13,9 @@
         "clase10": "nodemon async/asyncAwait.js",
         "clase11": "nodemon modulos/globales.js",
         "clase12": "nodemon modulos/fs.js",
-        "clase13": "nodemon modulos/consola.js"
+        "clase13": "nodemon modulos/consola.js",
+        "clase15": "nodemon modulos/procesoHijo.js"
+
 
     },
     "keywords": [

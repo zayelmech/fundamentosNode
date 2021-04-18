@@ -120,3 +120,15 @@ nuestra terminal.
     console.groupEnd()// finaliza la agrupación.
     console.clear()// Limpia la consola.
 ```
+
+# Procesos hijo
+
+El módulo de procesos secundarios de Node.js (child_process) tiene dos funciones spawn y exec, mediante las cuales podemos iniciar un proceso secundario para ejecutar otros programas en el sistema.
+
+La diferencia más significativa entre child_process.spawn y child_process.exec está en lo que spawn devuelve un stream y exec devuelve un buffer.
+
+
+- Usa _spawn_ cuando quieras que el proceso hijo devuelva datos binarios enormes a Node.
+- Usa _exec_ cuando quieras que el proceso hijo devuelva mensajes de estado simples.
+- Usa _spawn_ cuando quieras recibir datos desde que el proceso arranca.
+- Usa _exec_ cuando solo quieras recibir datos al final de la ejecución.
