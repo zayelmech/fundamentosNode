@@ -1,0 +1,15 @@
+{
+    "name": "electron-app",
+    "version": "1.0.0",
+    "description": "Aplicacion para windows desde node.js",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Abdiel C.",
+    "license": "MIT",
+    "dependencies": {
+        "electron": "^12.0.4"
+    }
+}

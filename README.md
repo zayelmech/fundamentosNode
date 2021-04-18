@@ -158,3 +158,42 @@ process.on('uncaughtException', (error, origen) => console.log(error, origen));
 ```js
 process.on('exit', () => console.log('Adios'));
 ```
+
+# Cosntruyendo modulos: Require e import 
+
+En Node tenemos una forma de importar módulos la cual es con el método `{require}`, el cual es la forma por defecto de importar módulos, ya sean nuestros propios módulos como los de otras personas en nuestros proyectos JS, pero suele haber mucha confusión debido al import.
+- **Import** es la forma de importar módulos en Ecmascript >= 6, el cual es un estándar de JavaScript para la web, esta forma de importar en teoría Node no la acepta oficialmente, a no ser que usemos su modo de `{.mjs}`.
+- Pero gracias a compiladores como **Babel**, nosotros podremos utilizar estas normas de Ecmascript en nuestro código para cuando se ejecute se transpile en código que sea aceptable por Node.
+Se recomienda en la mayoría de veces la importación con **require**.
+
+# Modulos utiles
+
+- bcrypt crea un hash que identifica una password por ejemploLa función de cifrado de bcrypt nos permite construir una plataforma de seguridad utilizando contraseñas encriptadas con Salt.
+- Moment. js es una librería que nos permite solventar estos problemas e implementa un sistema de manejo de fechas mucho más cómodo.
+- Sharp puede convertir imágenes grandes en imágenes JPEG, PNG más pequeñas y compatibles con la web de diferentes dimensiones.
+
+# Buffer & Streams
+- Buffer es la forma en que podemos leer los datos es su forma mas sencilla, en este caso Node transmite estos datos Buffer en binario.
+Poder convertir datos a Buffer nos ayudara a la velocidad y mejorar el rendimiento de la lectura y escritura de datos, debido que se hace en el lenguaje de más bajo nivel para las maquinas.
+- Los streams son puntos de lectura de Buffers, con estos podemos declarar que acciones ejecutar cuando se recibe un buffer. Existen tres tipos de streams, stream de lectura, de escritura y de lectura y escritura.
+Un gran ejemplo de uso de los streams es el procesamiento de archivos grandes, como imágenes o videos, ya que podemos transformar estos a buffer y a través de los streams cargarlos o guardarlos parte por parte para mejorar el rendimiento de nuestro código.
+
+# Benchmarking (console time y timeEnd)
+La función `{console.time(‘nombre’)}` inicia un temporizador que se puede usar para rastrear cuánto tiempo dura una operación. El temporizador sera identificado por el nombre dado a la consola. Ese mismo nombre se utilizara cuando se llame a `{console.timeEnd(‘nombre’)}` para detener el temporizador y obtener el tiempo demorado durante el proceso.
+
+# Error First Callbacks
+
+Los Error First Callbacks se utilizan para pasar primero el error y los datos posteriormente. Entonces, puedes verificar el primer argumento, es decir, el objeto de error para ver si algo salió mal y puedes manejarlo. En caso de que no haya ningún error, puedes utilizar los argumentos posteriores y seguir adelante.
+
+# Scraping
+Web scraping es una técnica utilizada mediante programas de software para extraer información de sitios web. Usualmente, estos programas simulan la navegación de un humano en la World Wide Web ya sea utilizando el protocolo HTTP manualmente, o incrustando un navegador en una aplicación.
+
+# Automatizando procesos
+
+`{gulp.js}`
+
+- Es una herramienta de construcción en JavaScript construida sobre flujos de nodos . 
+- Estos flujos facilitan la conexión de operaciones de archivos a través de canalizaciones .
+- Gulp lee el sistema de archivos y canaliza los datos disponibles de un complemento de un solo propósito a otro a través del .pipe()operador, haciendo una tarea a la vez. 
+- Los archivos originales no se ven afectados hasta que se procesan todos los complementos. Se puede configurar para modificar los archivos originales o para crear nuevos. 
+- Esto otorga la capacidad de realizar tareas complejas mediante la vinculación de sus numerosos complementos. 
