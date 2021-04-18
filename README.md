@@ -140,3 +140,21 @@ Node nos ofrece el modulo HTTP el cual nos permite principalmente crear un servi
 En este modulo encontraremos todo lo necesario que necesitamos para crear un sistema de rutas, que responderá cada ruta, los header que podrá mandar, etc.
 
 Uno de los métodos principales de este modulo es createServer, el cual nos permitirá abrir un puerto para crear el servidor.
+
+# OS 
+El modulo de Node para OS me permite acceder a elementos de muy bajo nivel, y es útil en diferentes contextos.
+
+# Process
+El objecto process es una instancia de EventEmitter; podemos suscribirnos a el para escuchar eventos de node.
+
+- UncaughtException: Permite capturar cualquier error que no fue caputurado previamente. Esto evita que Node cierre todos los hijos al encontrar un error no manejado.
+
+```js
+process.on('uncaughtException', (error, origen) => console.log(error, origen));
+```
+
+- exit: Se ejecuta cuando node detiene el `{eventloop}` y cierra su proceso principal.
+
+```js
+process.on('exit', () => console.log('Adios'));
+```
