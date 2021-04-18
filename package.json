@@ -14,7 +14,8 @@
         "clase11": "nodemon modulos/globales.js",
         "clase12": "nodemon modulos/fs.js",
         "clase13": "nodemon modulos/consola.js",
-        "clase15": "nodemon modulos/procesoHijo.js"
+        "clase15": "nodemon modulos/procesoHijo.js",
+        "clase16": "nodemon modulos/.js"
 
 
     },

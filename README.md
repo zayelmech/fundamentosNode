@@ -132,3 +132,11 @@ La diferencia más significativa entre child_process.spawn y child_process.exec 
 - Usa _exec_ cuando quieras que el proceso hijo devuelva mensajes de estado simples.
 - Usa _spawn_ cuando quieras recibir datos desde que el proceso arranca.
 - Usa _exec_ cuando solo quieras recibir datos al final de la ejecución.
+
+# HTTP 
+
+Node nos ofrece el modulo HTTP el cual nos permite principalmente crear un servidor en nuestro computador.
+
+En este modulo encontraremos todo lo necesario que necesitamos para crear un sistema de rutas, que responderá cada ruta, los header que podrá mandar, etc.
+
+Uno de los métodos principales de este modulo es createServer, el cual nos permitirá abrir un puerto para crear el servidor.
